@@ -109,3 +109,28 @@ button {
 button:hover {
   background: #956af7;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.osint-input {
+  background: #0f0f0f;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  transition: .2s;
+}
+
+.osint-input:focus {
+  border-color: cyan;
+  box-shadow: 0 0 10px rgba(0,255,255,0.4);
+  outline: none;
+}
+
