@@ -1,5 +1,4 @@
 import "./globals.css";
-import Sidebar from "./Sidebar";
 
 export const metadata = {
   title: "PainelConsulta | OSINT",
