@@ -1,25 +1,24 @@
-import './globals.css';
+import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: 'Painel Consulta',
-  description: 'Sistema moderno de consulta com App Router'
+  title: "PainelConsulta | OSINT",
+  description: "Painel de consultas avançadas estilo OSINT.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body>
-        <header className="topbar">
-          <div className="logo">🔥 PainelConsulta</div>
-          <nav>
-            <a href="/">Home</a>
-            <a href="/login">Login</a>
-            <a href="/consulta">Consulta</a>
-            <a href="/dashboard">Dashboard</a>
-          </nav>
-        </header>
+      <body className="bg-[#0A0A0A] text-white flex">
 
-        <main className="container">{children}</main>
+        {/* SIDEBAR */}
+        <Sidebar />
+
+        {/* MAIN CONTENT */}
+        <main className="flex-1 p-6 md:p-10 ml-0 md:ml-72 transition-all">
+          {children}
+        </main>
+
       </body>
     </html>
   );
